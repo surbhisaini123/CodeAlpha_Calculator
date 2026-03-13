@@ -1,0 +1,56 @@
+
+body{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: rgb(34, 66, 73);
+    
+}
+#border{
+    
+     height: 450px;
+     width: 300px; 
+     /* border: 2px solid;  */
+     background-color: rgba(18, 18, 18, 0.375) ;
+     border-radius: 30px;
+     
+    
+}
+#input{
+    margin: 5px;
+    margin-top: 10px;
+    height: 50px;
+    width: 280px;
+    background-color: rgb(217, 194, 194);
+    border-radius: 20px;
+
+}
+.button{
+    grid-area: 20px;
+    gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+button{
+    margin: 4px;
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    border-radius: 50%;
+   
+    
+}
+
+.equal{
+    border-radius: 15px;
+    height:30px;
+    width: 290px;
+     /* margin: 5px; */
+}
+/* .plus{
+    border-radius: 0px;
+    height: 90px;
+    width: 50px;
+} */
