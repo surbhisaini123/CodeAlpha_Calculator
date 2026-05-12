@@ -13,8 +13,22 @@ for(let btn of buttons){
          inp.value=""
      }else if(txt=="AC"){
         inp.value= inp.value.slice(0, -1)
-     }else if(txt=="="){
-        inp.value=eval(inp.value)   //eval calculate a result
+     }else if(txt== "="){
+          let expression = inp.value;
+
+    // 🔥 % ko /100 me convert karo (real calculator logic)
+    expression = expression.replace(/%/g,"/100");
+
+    try{
+        inp.value = eval(expression);
+    }catch{
+        inp.value = "Error";
+    }   //eval calculate a result
+    }else if(txt=="()"){
+    addBracket()
+    }else if(txt=="%"){
+        inp.value+="%"
+
     }else{
         inp.value=inp.value+txt
     }
