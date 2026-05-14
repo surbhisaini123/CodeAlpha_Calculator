@@ -1,8 +1,10 @@
-let inp= document.querySelector("input")
+
+
+
+
+document.addEventListener("DOMContentLoaded", function(){
+    let inp= document.querySelector("input")
 let buttons=document.querySelectorAll(".button button")
-
-
-
 for(let btn of buttons){
   
      btn.addEventListener("click" ,()=>{
@@ -38,3 +40,7 @@ for(let btn of buttons){
         
     
 }
+   
+
+
+})
